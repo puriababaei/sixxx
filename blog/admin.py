@@ -5,7 +5,8 @@ from .models import Cat_org, posts
 class adminblog(admin.ModelAdmin):
     list_display = (
         "Title", 
-        "Time",     
+        "Time",  
+        "photo_tag",   
         "Status",
     )
     list_filter = ("Time", "Status",)
